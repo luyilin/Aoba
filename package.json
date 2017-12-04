@@ -1,0 +1,45 @@
+{
+  "name": "Aoba",
+  "version": "0.0.1",
+  "description": "create a lovely resume for Aoba Suzukaze.",
+  "repository": {
+    "url": "https://github.com/luyilin/Aoba.git",
+    "type": "git"
+  },
+  "main": "dist/aoba",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npm run lint && npm run build",
+    "lint": "xo",
+    "dev": "poi -c docs/dev/poi.config.js",
+    "build": "poi build -c docs/dev/poi.config.js --component aoba"
+  },
+  "author": "luyilin <luyilin12@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jump.js": "^1.0.2",
+    "marked3": "^0.5.1",
+    "prismjs": "^1.8.4",
+    "slugo": "^0.2.1",
+    "unfetch": "^3.0.0",
+    "vue": "^2.5.9"
+  },
+  "devDependencies": {
+    "eslint-config-rem": "^3.0.0",
+    "express": "^4.16.2",
+    "node-sass": "^4.7.2",
+    "poi": "^9.5.5",
+    "poi-preset-bundle-report": "^2.0.2",
+    "sass-loader": "^6.0.6",
+    "vue-template-compiler": "^2.5.9",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": [
+      "browser"
+    ]
+  }
+}
