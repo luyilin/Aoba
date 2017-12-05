@@ -185,6 +185,7 @@
     box-shadow: 0 0 2px 0 rgba(0,0,0, .15),
     0 4px 4px -1px rgba(0,0,0, .18);
     border-radius: 3px;
+    overflow: hidden;
   }
 
   .sidebar {
@@ -234,18 +235,24 @@
 
   .main {
     flex: 1;
-    padding: 20px 15px;
+    padding: 15px;
     color: var(--font);
     .part {
-      margin: 20px auto;
+      margin: 15px auto;
       h2 {
         color: var(--purple);
         border-bottom: 1px solid var(--purple);
         font-weight: inherit;
-        margin: 15px auto;
         line-height: 1.5;
+        margin: 12px auto;
+        display: flex;
+        align-items: center;
         .iconfont {
           font-size: 24px;
+          margin-right: 7px;
+        }
+        .icon-project {
+          font-size: 26px;
         }
       }
       .info {
