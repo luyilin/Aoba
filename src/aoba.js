@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './components/App.vue'
 import content from './content'
 
 class Aoba {

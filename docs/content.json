@@ -6,7 +6,7 @@
     "name": "Aoba Suzukaze",
     "gender": "女",
     "avatar": "https://wx4.sinaimg.cn/mw690/a2117cdbgy1fm50e95u2wj20570543yj.jpg",
-    "desc": "",
+    "desc": "今天也要加油哦～",
     "info": "",
     "education": "某高中",
     "blog": "□□□□□",
@@ -22,14 +22,14 @@
   "application": "角色设计",
   "workExperience": [{
     "companyLogo": "https://wx2.sinaimg.cn/mw690/a2117cdbgy1fm5xlwuqt2j206y058jrl.jpg",
-    "companyName": "飞鹰跃动（Eagle Jump）",
-    "startDate": "",
+    "companyName": "飞鹰跃动工作室（Eagle Jump）",
+    "startDate": "2013.01",
     "endDate": "present",
     "project": [
       {
-        "name": "精灵物语",
-        "description": "精灵物语",
-        "previewImage": ""
+        "name": "精灵物语3",
+        "description": "精灵物语3 是 EagleJump 主导开发、发行的一款动作冒险游戏。隶属于游戏的视觉设计团队，主要负责 3D 制作。",
+        "previewImage": "https://wx2.sinaimg.cn/mw690/a2117cdbgy1fm609x0v47j206x04g75d.jpg"
       }
     ]
   }],
@@ -41,12 +41,14 @@
     "previewImage": ""
   }],
   "skills": [{
-    "name": "",
-    "description": [""]
+    "name": "板绘",
+    "description": ["其实我画画蛮不错的"]
+  }, {
+    "name": "3D 制作",
+    "description": ["从萌新到大佬的进阶之路"]
   }, {
     "name": "其他属性",
-    "description": ["合法萝莉", "性格认真，永远积极向上的思考。",
-      "不擅长运动。喜欢的食物是仙贝、羊羹这类和风点心和汉堡肉，不喜欢辣味、苦味和刺激性的食物。", "喜欢画画，不过在工作后似乎难以抽出时间来。"],
-    "abandoned": ["坐拥后宫的女人竟然是个合法萝莉！！！"]
+    "description": ["性格认真，永远积极向上的思考"],
+    "abandoned": ["谁能想到坐拥后宫的女人竟然是个合法萝莉"]
   }]
 }

@@ -6059,6 +6059,10 @@ ultron@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.1.1.tgz#9fe1536a10a664a65266a1e3ccf85fd36302bc9c"
 
+unfetch@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-3.0.0.tgz#8d1e0513a4ecd0e5ff2d41a6ba77771aae8b6482"
+
 unherit@^1.0.4:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/unherit/download/unherit-1.1.0.tgz#6b9aaedfbf73df1756ad9e316dd981885840cd7d"
