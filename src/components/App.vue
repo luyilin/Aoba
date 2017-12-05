@@ -193,7 +193,7 @@
     color: #fff;
     padding: 15px;
     .avatar-wrap {
-      margin: 25px auto 30px;
+      margin: 25px auto 40px;
       text-align: center;
       img {
         display: block;
@@ -207,7 +207,7 @@
       }
       .desc {
         font-size: 14px;
-        margin-top: 3px;
+        margin-top: 5px;
       }
     }
     .side-li {
@@ -243,6 +243,7 @@
         border-bottom: 1px solid var(--purple);
         font-weight: inherit;
         margin: 15px auto;
+        line-height: 1.5;
         .iconfont {
           font-size: 24px;
         }

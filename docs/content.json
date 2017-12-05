@@ -6,7 +6,7 @@
     "name": "Aoba Suzukaze",
     "gender": "女",
     "avatar": "https://wx4.sinaimg.cn/mw690/a2117cdbgy1fm50e95u2wj20570543yj.jpg",
-    "desc": "今天也要加油哦～",
+    "desc": "今天也要加油哦~",
     "info": "",
     "education": "某高中",
     "blog": "□□□□□",
@@ -28,7 +28,7 @@
     "project": [
       {
         "name": "精灵物语3",
-        "description": "精灵物语3 是 EagleJump 主导开发、发行的一款动作冒险游戏。隶属于游戏的视觉设计团队，主要负责 3D 制作。",
+        "description": "精灵物语3 是 EagleJump 主导开发、发行的一款动作冒险游戏。作为游戏的视觉设计团队的一员，主要负责 3D 制作。",
         "previewImage": "https://wx2.sinaimg.cn/mw690/a2117cdbgy1fm609x0v47j206x04g75d.jpg"
       }
     ]
@@ -42,13 +42,13 @@
   }],
   "skills": [{
     "name": "板绘",
-    "description": ["其实我画画蛮不错的"]
+    "description": ["其实我画画蛮不错的 (⁎˃ᴗ˂⁎)"]
   }, {
     "name": "3D 制作",
     "description": ["从萌新到大佬的进阶之路"]
   }, {
     "name": "其他属性",
     "description": ["性格认真，永远积极向上的思考"],
-    "abandoned": ["谁能想到坐拥后宫的女人竟然是个合法萝莉"]
+    "abandoned": ["谁能想到坐拥后宫的女人竟然是个合法萝莉！"]
   }]
 }
