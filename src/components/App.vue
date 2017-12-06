@@ -65,18 +65,24 @@
             <i class="iconfont icon-project"></i>
             Experience 项目与工作经验
           </h2>
-          <div class="company" v-for="i in workExperience">
+          <div class="company" v-for="i in data.workExperience">
             <h3>
               <img :src="i.companyLogo">
               {{i.companyName}}（{{ i.startDate }} - {{ i.endDate === '' || i.endDate === 'present' ? '至今' : i.endDate }}）
             </h3>
-            <ul class="project" v-for="j in i.project">
-              <li>
-                <h4>{{ j.name }}</h4>
-                <p>{{ j.description }}</p>
-                <img :src="j.previewImage">
-              </li>
-            </ul>
+            <div class="project" v-for="j in i.project">
+              <h4>{{ j.name }}</h4>
+              <p>{{ j.description }}</p>
+              <img :src="j.previewImage">
+            </div>
+          </div>
+          <div class="person-project">
+            <h3>个人项目</h3>
+            <div class="project" v-for="i in data.personalProject">
+              <h4>{{ i.name }}</h4>
+              <p>{{ i.description }}</p>
+              <img :src="i.previewImage">
+            </div>
           </div>
         </div>
         <div class="part">
@@ -84,7 +90,7 @@
             <i class="iconfont icon-icskill"></i>
             Skill 技能
           </h2>
-          <ul class="project" v-for="i in skills">
+          <ul class="project" v-for="i in data.skills">
             <li>
               <h4>{{ i.name }}</h4>
               <p v-for="j in i.description">{{ j }}</p>
@@ -110,16 +116,7 @@
       },
       contact: function () {
         return this.data.contact
-      },
-      workExperience: function () {
-        return this.data.workExperience
-      },
-      personalProject: function () {
-        return this.data.personalProject
-      },
-      skills: function () {
-        return this.data.skills
-      },
+      }
     },
 
     async created() {
@@ -269,11 +266,20 @@
           display: flex;
           align-items: center;
           margin: 5px 0;
-          color: var(--title);
           img {
             height: 50px;
             margin-right: 10px;
           }
+        }
+      }
+      h3 {
+        font-size: 20px;
+        color: var(--title);
+      }
+      .person-project {
+        h3 {
+          line-height: 2;
+          margin-bottom: 10px;
         }
       }
       .project {
@@ -301,7 +307,7 @@
           margin-bottom: 5px;
         }
         img {
-          max-height: 180px;
+          max-height: 200px;
         }
         .abandon {
           text-decoration: line-through;
