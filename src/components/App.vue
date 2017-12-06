@@ -79,7 +79,11 @@
           <div class="person-project">
             <h3>个人项目</h3>
             <div class="project" v-for="i in data.personalProject">
-              <h4>{{ i.name }}</h4>
+              <h4>
+                {{ i.name }}
+                <a :href="i.sourceCode">源代码</a>
+                <a :href="i.demo">Demo</a>
+              </h4>
               <p>{{ i.description }}</p>
               <img :src="i.previewImage">
             </div>
@@ -106,6 +110,7 @@
 <script>
   import fetch from 'unfetch'
   import Loading from './loading.vue'
+  import jsYaml from 'js-yaml'
 
   export default {
     props: ['opts'],
@@ -120,7 +125,13 @@
     },
 
     async created() {
-      const content = await fetch(`${this.opts.path}${this.opts.indexFile}`).then(res => res.json())
+      var content
+      if (this.opts.indexFile.split('.')[1].indexOf('yaml') > -1 ) {
+        content = await fetch(`${this.opts.path}${this.opts.indexFile}`).then(res => res.text())
+        content = jsYaml.load(content)
+      } else {
+        content = await fetch(`${this.opts.path}${this.opts.indexFile}`).then(res => res.json())
+      }
       this.data = Object.assign({}, this.opts, content)
       await this.$nextTick()
       this.loading = false
@@ -151,7 +162,7 @@
 
   :root {
     --purple: #8d9cd2;
-    --link: #a18dd2;
+    --link: #b392e0;
     --title: #4d61a9;
     --dark: #24292e;
     --font: #666;
@@ -301,6 +312,15 @@
           color: var(--dark);
           font-size: 18px;
           margin-bottom: 5px;
+          display: flex;
+          align-items: center;
+          a {
+            font-size: 12px;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 1px 3px;
+            margin-left: 15px;
+          }
         }
         p {
           line-height: 1.5;

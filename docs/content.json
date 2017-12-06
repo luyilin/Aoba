@@ -1,7 +1,4 @@
 {
-  "lang": "zh",
-  "path": "./",
-  "indexFile": "content.json",
   "basicInfo": {
     "name": "Aoba Suzukaze",
     "gender": "女",
@@ -44,8 +41,8 @@
     {
     "name": "emmm 好像还没有",
     "description": "萌还不够么..",
-    "sourceCodeLink": "",
-    "demoLink": "",
+    "sourceCode": "",
+    "demo": "",
     "previewImage": "https://wx3.sinaimg.cn/mw690/a2117cdbgy1fm705blrdlj20jg0jg0ue.jpg"
     }
   ],

@@ -1,0 +1,47 @@
+---
+basicInfo:
+  name: Aoba Suzukaze
+  gender: 女
+  avatar: https://wx4.sinaimg.cn/mw690/a2117cdbgy1fm50e95u2wj20570543yj.jpg
+  desc: 今天也要加油哦~
+  info: ''
+  education: 某高中
+  blog: "□□□□□"
+  github: "□□□□□"
+contact:
+  tel: "□□□□□"
+  email: "□□□□□"
+  wechat: "□□□□□"
+  qq: "□□□□□"
+  telegram: "□□□□□"
+application: 角色设计
+workExperience:
+- companyLogo: https://wx2.sinaimg.cn/mw690/a2117cdbgy1fm5xlwuqt2j206y058jrl.jpg
+  companyName: 飞鹰跃动工作室（Eagle Jump）
+  startDate: '2013.01'
+  endDate: present
+  project:
+  - name: 精灵物语3
+    description: 精灵物语3 是 EagleJump 主导开发、发行的一款动作冒险游戏。作为游戏的视觉设计团队的一员，主要负责 3D 制作。
+    previewImage: https://wx2.sinaimg.cn/mw690/a2117cdbgy1fm609x0v47j206x04g75d.jpg
+  - name: PECO
+    description: PECO 是一款讲述现代少女坠入了充满玩偶怪物的异世界的游戏。主角的设计灵感来自萌萌的熊型睡袋，和八神光一起完成游戏的角色设计。
+    previewImage: https://wx3.sinaimg.cn/mw690/a2117cdbgy1fm6zeddd3pj20gl0mfq8d.jpg
+personalProject:
+- name: emmm 好像还没有
+  description: 萌还不够么..
+  sourceCode: ''
+  demo: ''
+  previewImage: https://wx3.sinaimg.cn/mw690/a2117cdbgy1fm705blrdlj20jg0jg0ue.jpg
+skills:
+- name: 板绘
+  description:
+  - 其实我画画蛮不错的 (⁎˃ᴗ˂⁎)，虽然没有八神光前辈好
+- name: 3D 制作
+  description:
+  - 从萌新到大佬的进阶之路
+- name: 其他属性
+  description:
+  - 性格认真，永远积极向上的思考
+  abandoned:
+  - 谁能想到坐拥后宫的女人竟然是个合法萝莉！

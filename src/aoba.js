@@ -4,7 +4,11 @@ import content from './content'
 
 class Aoba {
   constructor(i) {
-    this.content = Object.assign({}, content, i)
+    this.content = Object.assign({
+      "lang": "zh",
+      "path": "./",
+      "indexFile": "content.json"
+    }, content, i)
   }
 
   start(el) {
