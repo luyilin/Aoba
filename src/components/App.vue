@@ -318,7 +318,7 @@
             font-size: 12px;
             border: 1px solid;
             border-radius: 5px;
-            padding: 1px 3px;
+            padding: 2px 3px;
             margin-left: 15px;
           }
         }

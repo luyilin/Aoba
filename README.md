@@ -1,16 +1,20 @@
 # Aoba
 
+[Aoba's resume](https://luyilin.github.io/Aoba/)
+
 ## Introduction
 
-Aoba is a resume creator which you can create a lovely resume only by a configuration file like a .json or a .yaml.
+Aoba is a resume creator which you can create a lovely resume only with a configuration file, such as a .json file or a .yaml file.
 
 The project is build by [Poi](https://github.com/egoist/poi), then we need not git clone && run build to get a resume, just use it. The design is inspired by the cute [resume](https://github.com/DIYgod/Resume) by DIYgod. Thanks for the awesome work they done.
 
-The name is inspired by lovely Aoba Suzukaze in 《new game!》, maybe it can be a gift for young people who enter the workforce. 
+The name is inspired by lovely Aoba Suzukaze in 《new game!》, maybe it can be a gift for young people who enter the workforce, with my best wishes.
+
+![Aoba Suzukaze](https://wx3.sinaimg.cn/mw690/a2117cdbly1fm7csm5gopj208z07ijvh.jpg)
 
 ## Quick Start
 
-* Create an HTML file: `index.html` which will be be your resume website:
+* Create an HTML file: `index.html` which will be be your resume:
 
 ```html
 <!DOCTYPE html>
@@ -21,12 +25,12 @@ The name is inspired by lovely Aoba Suzukaze in 《new game!》, maybe it can be
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
   <title>My resume</title>
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aoba-resume@0.0.3/dist/aoba.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aoba-resume@0.0.4/dist/aoba.css">
 </head>
 <body>
   <div id="app"></div>
   <!-- Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aoba-resume@0.0.3/dist/aoba.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aoba-resume@0.0.4/dist/aoba.js"></script>
   <!-- Start app -->
   <script>
     const resume = new aoba()
@@ -36,17 +40,19 @@ The name is inspired by lovely Aoba Suzukaze in 《new game!》, maybe it can be
 </html>
 ```
 
-* Then write a `json` or `yaml` file at the same directory where `index.html` is located.
+* Then write a .json or .yaml file at the same directory where `index.html` is located.
 The file has six parts, basicInfo, contact, application, workExperience, personalProject and skills.
 See [content.json](https://github.com/luyilin/Aoba/blob/master/docs/content.json) or [content.yaml](https://github.com/luyilin/Aoba/blob/master/docs/content.yaml) for details.
 
 
-* Finally serve this directory as a static website:
+* Then serve this directory as a static website:
 
   - node.js: `npm i -g serve` && `serve ./docs`
   - python: `cd ./docs` && `python -m SimpleHTTPServer`
   - golang: `cd ./docs` && `caddy`
   - ...etc, you can use any static file server as you like.
+  
+* Finally save as pdf, open the file in a browser, and choose print.
 
 
 ## Deploy
@@ -71,7 +77,7 @@ const resume = new aoba(options)
 
 Type: `string`
 
-now only support cn..
+Only support cn now..
 todolist: support en
 
 ##### path 
