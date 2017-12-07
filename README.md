@@ -27,12 +27,12 @@ The name is inspired by lovely Aoba Suzukaze in 《new game!》, maybe it can be
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
   <title>My resume</title>
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aoba-resume@0.0.4/dist/aoba.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aoba-resume/dist/aoba.css">
 </head>
 <body>
   <div id="app"></div>
   <!-- Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aoba-resume@0.0.4/dist/aoba.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aoba-resume/dist/aoba.js"></script>
   <!-- Start app -->
   <script>
     const resume = new aoba()
@@ -54,7 +54,7 @@ See [content.json](https://github.com/luyilin/Aoba/blob/master/docs/content.json
   - golang: `cd ./docs` && `caddy`
   - ...etc, you can use any static file server as you like.
   
-* Finally save as pdf, open the file in a browser, and choose print.
+* Finally save the file as pdf, open the file in a browser, choose print and save.
 
 
 ## Deploy
@@ -77,9 +77,10 @@ const resume = new aoba(options)
 
 ##### lang
 
-Type: `string`
+Type: `string`<br>
+Default: `zh`
 
-support zh && en
+support zh & en
 
 ##### path 
 
@@ -92,6 +93,7 @@ Type: `string`<br>
 Default: `content.json`
 
 The configuration file.
+
 E.g. [content.json](https://github.com/luyilin/Aoba/blob/master/docs/content.json), [content.yaml](https://github.com/luyilin/Aoba/blob/master/docs/content.yaml)
 
 #### resume.start(target)
