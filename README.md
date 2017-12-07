@@ -1,6 +1,7 @@
 # Aoba
 
 [Aoba's resume](https://luyilin.github.io/Aoba/)
+[English resume](https://luyilin.github.io/Aoba/resume-en.html)
 
 ## Introduction
 
@@ -77,8 +78,7 @@ const resume = new aoba(options)
 
 Type: `string`
 
-Only support cn now..
-todolist: support en
+support zh && en
 
 ##### path 
 
