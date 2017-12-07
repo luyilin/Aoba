@@ -29,9 +29,9 @@ const lang = {
     personalProject: 'Personal Project',
     skill: 'Skill',
     basicInfo: {
-      name: 'name',
-      school: 'school',
-      blog: 'blog'
+      name: 'Name',
+      school: 'School',
+      blog: 'Blog'
     },
     contact: {
       tel: 'Tel',

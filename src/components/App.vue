@@ -42,7 +42,7 @@
         <div class="side-li">
           <i class="iconfont icon-tag"></i>
           <div>
-            <h2>{{ $inter.get('basicInfoTitle') }}</h2>
+            <h2>{{ $inter.get('application') }}</h2>
             <span>{{ opts.application }}</span>
           </div>
         </div>
