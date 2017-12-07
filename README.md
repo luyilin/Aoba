@@ -1,6 +1,7 @@
 # Aoba
 
 [Aoba's resume](https://luyilin.github.io/Aoba/)
+
 [English resume](https://luyilin.github.io/Aoba/resume-en.html)
 
 ## Introduction
@@ -91,7 +92,7 @@ Type: `string`<br>
 Default: `content.json`
 
 The configuration file.
-e.g. [content.json](https://github.com/luyilin/Aoba/blob/master/docs/content.json) [content.yaml](https://github.com/luyilin/Aoba/blob/master/docs/content.yaml)
+E.g. [content.json](https://github.com/luyilin/Aoba/blob/master/docs/content.json), [content.yaml](https://github.com/luyilin/Aoba/blob/master/docs/content.yaml)
 
 #### resume.start(target)
 
