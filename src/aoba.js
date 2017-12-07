@@ -16,7 +16,7 @@ class Aoba {
       "indexFile": "content.json"
     }, content, i)
     inter = new Inter({
-      locale: i.lang || 'zh',
+      locale: i && i.lang || 'zh',
       locales: lang
     })
   }
