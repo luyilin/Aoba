@@ -5,28 +5,28 @@
       <div class="sidebar">
         <div class="avatar-wrap">
           <img :src="basicInfo.avatar">
-          <h1>{{ basicInfo.name }} 的简历</h1>
+          <h1>{{ basicInfo.name + $inter.get('resume') }}</h1>
           <p class="desc">{{ basicInfo.desc }}</p>
         </div>
         <div class="side-li">
           <i class="iconfont icon-tag"></i>
           <div>
-            <h2>Contact 联系方式</h2>
+            <h2>{{ $inter.get('contactTitle') }}</h2>
             <ul>
               <li>
                 <i class="iconfont icon-tel"></i>
-                <span>电话：{{ contact.tel }}</span>
+                <span>{{ $inter.get('contact.tel') }}：{{ contact.tel }}</span>
               </li>
               <li>
                 <i class="iconfont icon-email"></i>
                 <span>
-                  邮箱：
+                  {{ $inter.get('contact.email') }}：
                   <a href="mailto:luyilin12@gmail.com" target="_blank">{{ contact.email }}</a>
                 </span>
               </li>
               <li>
                 <i class="iconfont icon-wechat1"></i>
-                <span>微信：{{ contact.wechat }}</span>
+                <span>{{ $inter.get('contact.wechat') }}：{{ contact.wechat }}</span>
               </li>
               <li>
                 <i class="iconfont icon-QQ"></i>
@@ -42,7 +42,7 @@
         <div class="side-li">
           <i class="iconfont icon-tag"></i>
           <div>
-            <h2>Application 应聘岗位</h2>
+            <h2>{{ $inter.get('basicInfoTitle') }}</h2>
             <span>{{ opts.application }}</span>
           </div>
         </div>
@@ -51,24 +51,24 @@
         <div class="part">
           <h2>
             <i class="iconfont icon-Workordercenter-fi-copy"></i>
-            Basic info 基本信息
+            {{ $inter.get('basicInfoTitle') }}
           </h2>
           <ul class="info">
-            <li><span>个人信息：</span>{{ basicInfo.name }} / {{ basicInfo.gender }}</li>
-            <li><span>毕业院校：</span>{{ basicInfo.education }}</li>
-            <li><span>博客：</span><a :href="basicInfo.blog" target="_blank">{{ basicInfo.blog }}</a></li>
+            <li><span>{{ $inter.get('basicInfo.name') }}：</span>{{ basicInfo.name }} / {{ basicInfo.gender }}</li>
+            <li><span>{{ $inter.get('basicInfo.school') }}：</span>{{ basicInfo.education }}</li>
+            <li><span>{{ $inter.get('basicInfo.blog') }}：</span><a :href="basicInfo.blog" target="_blank">{{ basicInfo.blog }}</a></li>
             <li><span>Github：</span><a :href="basicInfo.github" target="_blank">{{ basicInfo.github }}</a></li>
           </ul>
         </div>
         <div class="part">
           <h2>
             <i class="iconfont icon-project"></i>
-            Experience 项目与工作经验
+            {{ $inter.get('workExperience') }}
           </h2>
           <div class="company" v-for="i in data.workExperience">
             <h3>
               <img :src="i.companyLogo">
-              {{i.companyName}}（{{ i.startDate }} - {{ i.endDate === '' || i.endDate === 'present' ? '至今' : i.endDate }}）
+              {{i.companyName}}（{{ i.startDate }} - {{ i.endDate === '' || i.endDate === 'present' ? $inter.get('present') : i.endDate }}）
             </h3>
             <div class="project" v-for="j in i.project">
               <h4>{{ j.name }}</h4>
@@ -77,11 +77,11 @@
             </div>
           </div>
           <div class="person-project">
-            <h3>个人项目</h3>
+            <h3>{{ $inter.get('personalProject') }}</h3>
             <div class="project" v-for="i in data.personalProject">
               <h4>
                 {{ i.name }}
-                <a :href="i.sourceCode">源代码</a>
+                <a :href="i.sourceCode">{{ $inter.get('sourceCode') }}</a>
                 <a :href="i.demo">Demo</a>
               </h4>
               <p>{{ i.description }}</p>
@@ -92,7 +92,7 @@
         <div class="part">
           <h2>
             <i class="iconfont icon-icskill"></i>
-            Skill 技能
+            {{ $inter.get('skill') }}
           </h2>
           <ul class="project" v-for="i in data.skills">
             <li>

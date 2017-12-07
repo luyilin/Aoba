@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import App from './components/App.vue'
 import content from './content'
+import Inter from 'vue-inter'
+import lang from './lang'
+
+Vue.use(Inter)
+
+var inter
 
 class Aoba {
   constructor(i) {
@@ -9,10 +15,15 @@ class Aoba {
       "path": "./",
       "indexFile": "content.json"
     }, content, i)
+    inter = new Inter({
+      locale: i.lang || 'zh',
+      locales: lang
+    })
   }
 
   start(el) {
     return new Vue({
+      inter,
       el,
       render: h => h(App, { props: { opts: this.content } })
     })
