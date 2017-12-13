@@ -4,21 +4,20 @@ basicInfo:
   gender: 女
   avatar: https://wx4.sinaimg.cn/mw690/a2117cdbgy1fm50e95u2wj20570543yj.jpg
   desc: 今天也要加油哦~
-  info: ''
   education: 某高中
-  blog: "□□□□□"
-  github: "□□□□□"
+  blog: □□□□□
+  github: □□□□□
 contact:
-  tel: "□□□□□"
-  email: "□□□□□"
-  wechat: "□□□□□"
-  qq: "□□□□□"
-  telegram: "□□□□□"
+  tel: □□□□□
+  email: □□□□□
+  wechat: □□□□□
+  qq: □□□□□
+  telegram: □□□□□
 application: 角色设计
 workExperience:
 - companyLogo: https://wx2.sinaimg.cn/mw690/a2117cdbgy1fm5xlwuqt2j206y058jrl.jpg
   companyName: 飞鹰跃动工作室（Eagle Jump）
-  startDate: '2013.01'
+  startDate: 2013.01
   endDate: present
   project:
   - name: 精灵物语3
@@ -30,8 +29,8 @@ workExperience:
 personalProject:
 - name: emmm 好像还没有
   description: 萌还不够么..
-  sourceCode: ''
-  demo: ''
+  sourceCode:
+  demo:
   previewImage: https://wx3.sinaimg.cn/mw690/a2117cdbgy1fm705blrdlj20jg0jg0ue.jpg
 skills:
 - name: 板绘

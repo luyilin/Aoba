@@ -1,6 +1,6 @@
 const lang = {
   zh: {
-    resume: ' 的简历',
+    resume: '的简历',
     basicInfoTitle: 'Basic info 基本信息',
     contactTitle: 'Contact 联系方式',
     application: 'Application 应聘岗位',

@@ -21,7 +21,7 @@
                 <i class="iconfont icon-email"></i>
                 <span>
                   {{ $inter.get('contact.email') }}：
-                  <a href="mailto:luyilin12@gmail.com" target="_blank">{{ contact.email }}</a>
+                  <a :href="'mailto:' + contact.email" target="_blank">{{ contact.email }}</a>
                 </span>
               </li>
               <li>
