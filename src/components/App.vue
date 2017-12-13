@@ -177,7 +177,7 @@
     --link: #a178d8;
     --title: #4d61a9;
     --dark: #24292e;
-    --font: #666;
+    --font: #555;
     --selection-bg: var(--theme);
     --selection-fg: white;
   }
@@ -185,6 +185,11 @@
   ::selection {
     background: var(--selection-bg);
     color: var(--selection-fg);
+  }
+
+  body {
+    font-family: PingFang SC,Lantinghei SC,-apple-system,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+    -webkit-font-smoothing: antialiased;
   }
 
   ul, li {
