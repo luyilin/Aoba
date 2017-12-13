@@ -8,7 +8,7 @@
 
 Aoba is a resume creator which you can create a lovely resume only with a configuration file, such as a .json file or a .yaml file.
 
-The project is build by [Poi](https://github.com/egoist/poi), then we need not git clone && run build to get a resume, just use it. The design is inspired by the cute [resume](https://github.com/DIYgod/Resume) by DIYgod. Thanks for the awesome work they done.
+The project is build by [poi](https://github.com/egoist/poi), then we need not git clone && run build to get a resume, just use it. The design is inspired by the cute [resume](https://github.com/DIYgod/Resume) by DIYgod. Thanks for the awesome work they done.
 
 The name is inspired by lovely Aoba Suzukaze in 《new game!》, maybe it can be a gift for young people who enter the workforce, with my best wishes.
 
@@ -95,6 +95,8 @@ Default: `content.json`
 The configuration file.
 
 E.g. [content.json](https://github.com/luyilin/Aoba/blob/master/docs/content.json), [content.yaml](https://github.com/luyilin/Aoba/blob/master/docs/content.yaml)
+
+The description fields support html syntax.
 
 #### color
 
