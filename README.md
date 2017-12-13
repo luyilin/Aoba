@@ -73,21 +73,21 @@ Don't forget to add `.nojekyll` file to tell GitHub to treat it as a normal stat
 const resume = new aoba(options)
 ```
 
-#### options
+### options
 
-##### lang
+#### lang
 
 Type: `string`<br>
 Default: `zh`
 
 support zh & en
 
-##### path 
+#### path 
 
 Type: `string`<br>
 Default: `./`
 
-##### indexFile
+#### indexFile
 
 Type: `string`<br>
 Default: `content.json`
@@ -96,7 +96,7 @@ The configuration file.
 
 E.g. [content.json](https://github.com/luyilin/Aoba/blob/master/docs/content.json), [content.yaml](https://github.com/luyilin/Aoba/blob/master/docs/content.yaml)
 
-##### color
+#### color
 
 Type: `string`<br>
 Default: `#8d9cd2`
@@ -105,9 +105,9 @@ The theme color.
 
 E.g. #999, rgb(137,214,217), lightsalmon and so on.
 
-#### resume.start(target)
+### resume.start(target)
 
-##### target
+#### target
 
 Type: `string` `HTMLElement`
 
