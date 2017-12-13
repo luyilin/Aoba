@@ -6,7 +6,7 @@
         <div class="avatar-wrap">
           <img :src="basicInfo.avatar">
           <h1>{{ basicInfo.name + $inter.get('resume') }}</h1>
-          <p class="desc">{{ basicInfo.desc }}</p>
+          <p class="desc" v-if="basicInfo.desc">{{ basicInfo.desc }}</p>
         </div>
         <div class="side-li">
           <i class="iconfont icon-tag"></i>
@@ -32,7 +32,7 @@
                 <i class="iconfont icon-QQ"></i>
                 <span>QQ：{{ contact.qq }}</span>
               </li>
-              <li>
+              <li v-if="contact.telegram">
                 <i class="iconfont icon-telegram1"></i>
                 <span>Telegram：<a :href="'https://t.me/' + contact.telegram" target="_blank">{{ contact.telegram }}</a></span>
               </li>
@@ -55,7 +55,8 @@
           </h2>
           <ul class="info">
             <li><span>{{ $inter.get('basicInfo.name') }}：</span>{{ basicInfo.name }} / {{ basicInfo.gender }}</li>
-            <li><span>{{ $inter.get('basicInfo.school') }}：</span>{{ basicInfo.education }}</li>
+            <li><span>{{ $inter.get('basicInfo.school') }}：</span>{{ basicInfo.school }}</li>
+            <li><span>{{ $inter.get('basicInfo.major') }}：</span>{{ basicInfo.major }}</li>
             <li><span>{{ $inter.get('basicInfo.blog') }}：</span><a :href="basicInfo.blog" target="_blank">{{ basicInfo.blog }}</a></li>
             <li><span>Github：</span><a :href="basicInfo.github" target="_blank">{{ basicInfo.github }}</a></li>
           </ul>
@@ -71,9 +72,13 @@
               {{i.companyName}}（{{ i.startDate }} - {{ i.endDate === '' || i.endDate === 'present' ? $inter.get('present') : i.endDate }}）
             </h3>
             <div class="project" v-for="j in i.project">
-              <h4>{{ j.name }}</h4>
-              <p>{{ j.description }}</p>
-              <img :src="j.previewImage">
+              <h4>
+                {{ j.name }}
+                <a v-if="j.sourceCode" :href="j.sourceCode" target="_blank">{{ $inter.get('sourceCode') }}</a>
+                <a v-if="j.demo" :href="j.demo" target="_blank">Demo</a>
+              </h4>
+              <p v-html="j.description"></p>
+              <img v-if="j.previewImage" :src="j.previewImage">
             </div>
           </div>
           <div class="person-project">
@@ -81,11 +86,11 @@
             <div class="project" v-for="i in data.personalProject">
               <h4>
                 {{ i.name }}
-                <a :href="i.sourceCode">{{ $inter.get('sourceCode') }}</a>
-                <a :href="i.demo">Demo</a>
+                <a v-if="i.sourceCode" :href="i.sourceCode" target="_blank">{{ $inter.get('sourceCode') }}</a>
+                <a v-if="i.demo" :href="i.demo" target="_blank">Demo</a>
               </h4>
-              <p>{{ i.description }}</p>
-              <img :src="i.previewImage">
+              <p v-html="i.description"></p>
+              <img v-if="i.previewImage" :src="i.previewImage">
             </div>
           </div>
         </div>
@@ -97,7 +102,7 @@
           <ul class="project" v-for="i in data.skills">
             <li>
               <h4>{{ i.name }}</h4>
-              <p v-for="j in i.description">{{ j }}</p>
+              <p v-for="j in i.description" v-html="j"></p>
               <p class="abandon" v-for="j in i.abandoned">{{ j }}</p>
             </li>
           </ul>
@@ -134,10 +139,12 @@
         content = await fetch(`${this.opts.path}${this.opts.indexFile}`).then(res => res.json())
       }
       this.data = Object.assign({}, this.opts, content)
-      let themeColor = this.opts.color || '#8d9cd2'
-      document.documentElement.style.setProperty('--theme', themeColor)
-      document.documentElement.style.setProperty('--link', Color(themeColor).lighten(0.2))
-      document.documentElement.style.setProperty('--title', Color(themeColor).darken(0.15))
+      let themeColor = this.opts.color
+      if (themeColor) {
+        document.documentElement.style.setProperty('--theme', themeColor)
+        document.documentElement.style.setProperty('--link', Color(themeColor).darken(0.2))
+        document.documentElement.style.setProperty('--title', Color(themeColor).darken(0.15))
+      }
       await this.$nextTick()
       this.loading = false
     },
@@ -167,7 +174,7 @@
 
   :root {
     --theme: #8d9cd2;
-    --link: #b392e0;
+    --link: #a178d8;
     --title: #4d61a9;
     --dark: #24292e;
     --font: #666;

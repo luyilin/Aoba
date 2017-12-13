@@ -10,6 +10,7 @@ const lang = {
     basicInfo: {
       name: '个人信息',
       school: '毕业院校',
+      major: '专业',
       blog: '博客'
     },
     contact: {
@@ -31,6 +32,7 @@ const lang = {
     basicInfo: {
       name: 'Name',
       school: 'School',
+      major: 'Major',
       blog: 'Blog'
     },
     contact: {

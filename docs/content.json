@@ -4,7 +4,8 @@
     "gender": "女",
     "avatar": "https://wx4.sinaimg.cn/mw690/a2117cdbgy1fm50e95u2wj20570543yj.jpg",
     "desc": "今天也要加油哦~",
-    "education": "某高中",
+    "school": "某高中",
+    "major": "动画设计（我猜的..",
     "blog": "□□□□□",
     "github": "□□□□□"
   },
@@ -25,11 +26,15 @@
       "project": [
         {
           "name": "精灵物语3",
+          "sourceCode": "",
+          "demo": "https://zh.moegirl.org/zh-hans/%E7%B2%BE%E7%81%B5%E7%89%A9%E8%AF%AD3",
           "description": "精灵物语3 是 Eagle Jump 主导开发、发行的一款动作冒险游戏。作为游戏的视觉设计团队的一员，主要负责 3D 制作。",
           "previewImage": "https://wx2.sinaimg.cn/mw690/a2117cdbgy1fm609x0v47j206x04g75d.jpg"
         },
         {
           "name": "PECO",
+          "sourceCode": "",
+          "demo": "",
           "description": "PECO 是一款讲述现代少女坠入了充满玩偶怪物的异世界的游戏。主角的设计灵感来自萌萌的熊型睡袋，和八神光一起完成游戏的角色设计。",
           "previewImage": "https://wx3.sinaimg.cn/mw690/a2117cdbgy1fm6zeddd3pj20gl0mfq8d.jpg"
         }
@@ -48,7 +53,7 @@
   "skills": [
     {
       "name": "板绘",
-      "description": ["其实我画画蛮不错的 (⁎˃ᴗ˂⁎)，虽然没有八神光前辈好"]
+      "description": ["其实我画画蛮不错的 (⁎˃ᴗ˂⁎)，虽然没有<a href='https://zh.moegirl.org/zh-hans/%E5%85%AB%E7%A5%9E%E5%85%89(NEW_GAME!)'>八神光</a>前辈好"]
     },
     {
       "name": "3D 制作",
