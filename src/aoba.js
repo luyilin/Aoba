@@ -11,9 +11,10 @@ var inter
 class Aoba {
   constructor(i) {
     this.content = Object.assign({
-      "lang": "zh",
-      "path": "./",
-      "indexFile": "content.json"
+      'lang': 'zh',
+      'path': './',
+      'indexFile': 'content.json',
+      'color': ''
     }, content, i)
     inter = new Inter({
       locale: i && i.lang || 'zh',

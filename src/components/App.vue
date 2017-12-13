@@ -111,6 +111,7 @@
   import fetch from 'unfetch'
   import Loading from './loading.vue'
   import jsYaml from 'js-yaml'
+  import Color from 'color'
 
   export default {
     props: ['opts'],
@@ -133,6 +134,10 @@
         content = await fetch(`${this.opts.path}${this.opts.indexFile}`).then(res => res.json())
       }
       this.data = Object.assign({}, this.opts, content)
+      let themeColor = this.opts.color || '#8d9cd2'
+      document.documentElement.style.setProperty('--theme', themeColor)
+      document.documentElement.style.setProperty('--link', Color(themeColor).lighten(0.2))
+      document.documentElement.style.setProperty('--title', Color(themeColor).darken(0.15))
       await this.$nextTick()
       this.loading = false
     },
@@ -161,12 +166,12 @@
   }
 
   :root {
-    --purple: #8d9cd2;
+    --theme: #8d9cd2;
     --link: #b392e0;
     --title: #4d61a9;
     --dark: #24292e;
     --font: #666;
-    --selection-bg: var(--purple);
+    --selection-bg: var(--theme);
     --selection-fg: white;
   }
 
@@ -198,7 +203,7 @@
 
   .sidebar {
     width: 29%;
-    background-color: var(--purple);
+    background-color: var(--theme);
     color: #fff;
     padding: 15px;
     .avatar-wrap {
@@ -248,8 +253,8 @@
     .part {
       margin: 15px auto;
       h2 {
-        color: var(--purple);
-        border-bottom: 1px solid var(--purple);
+        color: var(--theme);
+        border-bottom: 1px solid var(--theme);
         font-weight: inherit;
         line-height: 1.5;
         margin: 12px auto;
@@ -294,7 +299,7 @@
         }
       }
       .project {
-        border-left: 2px solid var(--purple);
+        border-left: 2px solid var(--theme);
         margin: 0 0 15px 5px;
         padding-left: 20px;
         position: relative;
@@ -303,7 +308,7 @@
           width: 16px;
           height: 16px;
           border-radius: 50%;
-          background-color: var(--purple);
+          background-color: var(--theme);
           position: absolute;
           top: 0;
           left: -9px;
