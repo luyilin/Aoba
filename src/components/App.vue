@@ -43,7 +43,7 @@
           <i class="iconfont icon-tag"></i>
           <div>
             <h2>{{ $inter.get('application') }}</h2>
-            <span>{{ opts.application }}</span>
+            <span>{{ data.application }}</span>
           </div>
         </div>
       </div>
