@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     .line {
-      background-color: var(--purple);
+      background-color: var(--theme);
       width: 4px;
       height: 35px;
       margin: 3px;

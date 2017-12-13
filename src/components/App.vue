@@ -34,7 +34,7 @@
               </li>
               <li>
                 <i class="iconfont icon-telegram1"></i>
-                <span>Telegram：{{ contact.telegram }}</span>
+                <span>Telegram：<a :href="'https://t.me/' + contact.telegram" target="_blank">{{ contact.telegram }}</a></span>
               </li>
             </ul>
           </div>
@@ -173,6 +173,11 @@
     --font: #666;
     --selection-bg: var(--theme);
     --selection-fg: white;
+  }
+
+  ::selection {
+    background: var(--selection-bg);
+    color: var(--selection-fg);
   }
 
   ul, li {
