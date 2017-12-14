@@ -55,6 +55,7 @@
           </h2>
           <ul class="info">
             <li><span>{{ $inter.get('basicInfo.name') }}：</span>{{ basicInfo.name }} / {{ basicInfo.gender }}</li>
+            <li v-if="basicInfo.birthday"><span>{{ $inter.get('basicInfo.birthday') }}：</span>{{ basicInfo.birthday }}</li>
             <li><span>{{ $inter.get('basicInfo.school') }}：</span>{{ basicInfo.school }}</li>
             <li><span>{{ $inter.get('basicInfo.major') }}：</span>{{ basicInfo.major }}</li>
             <li><span>{{ $inter.get('basicInfo.blog') }}：</span><a :href="basicInfo.blog" target="_blank">{{ basicInfo.blog }}</a></li>

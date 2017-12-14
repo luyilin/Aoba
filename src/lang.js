@@ -9,6 +9,7 @@ const lang = {
     skill: 'Skill 技能',
     basicInfo: {
       name: '个人信息',
+      birthday: '出生日期',
       school: '毕业院校',
       major: '专业',
       blog: '博客'
@@ -31,6 +32,7 @@ const lang = {
     skill: 'Skill',
     basicInfo: {
       name: 'Name',
+      birthday: 'Birthday',
       school: 'School',
       major: 'Major',
       blog: 'Blog'
