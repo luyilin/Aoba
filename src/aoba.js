@@ -13,7 +13,7 @@ class Aoba {
     this.content = Object.assign({
       'lang': 'zh',
       'path': './',
-      'indexFile': 'content.json',
+      'indexFile': 'content.yaml',
       'color': ''
     }, content, i)
     inter = new Inter({

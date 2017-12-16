@@ -10,7 +10,7 @@ Aoba is a resume creator which you can create a lovely resume only with a config
 
 The project is build by [poi](https://github.com/egoist/poi), then we need not git clone && run build to get a resume, just use it. The design is inspired by the cute [resume](https://github.com/DIYgod/Resume) by DIYgod. Thanks for the awesome work they done.
 
-The name is inspired by lovely Aoba Suzukaze in 《new game!》, maybe it can be a gift for young people who enter the workforce, with my best wishes.
+The name is inspired by lovely Aoba Suzukaze in *New Game!*, maybe it can be a gift for young people who enter the workforce, with my best wishes.
 
 ![Aoba Suzukaze](https://wx3.sinaimg.cn/mw690/a2117cdbly1fm7csm5gopj208z07ijvh.jpg)
 
@@ -90,7 +90,7 @@ Default: `./`
 #### indexFile
 
 Type: `string`<br>
-Default: `content.json`
+Default: `content.yaml`
 
 The configuration file.
 
