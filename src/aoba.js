@@ -1,20 +1,20 @@
 import Vue from 'vue'
+import Inter from 'vue-inter'
 import App from './components/App.vue'
 import content from './content'
-import Inter from 'vue-inter'
 import lang from './lang'
 
 Vue.use(Inter)
 
-var inter
+let inter
 
 class Aoba {
   constructor(i) {
     this.content = Object.assign({
-      'lang': 'zh',
-      'path': './',
-      'indexFile': 'content.yaml',
-      'color': ''
+      lang: 'zh',
+      path: './',
+      indexFile: 'content.yaml',
+      color: ''
     }, content, i)
     inter = new Inter({
       locale: i && i.lang || 'zh',
