@@ -1,7 +1,7 @@
 {
   "name": "aoba-resume",
-  "version": "1.0.2",
-  "description": "create a lovely resume for Aoba Suzukaze.",
+  "version": "1.0.3",
+  "description": "Create a lovely resume just with a config file.",
   "repository": {
     "url": "https://github.com/luyilin/Aoba.git",
     "type": "git"
@@ -32,7 +32,7 @@
   "devDependencies": {
     "eslint-config-rem": "^3.0.0",
     "node-sass": "^4.7.2",
-    "poi": "^9.5.5",
+    "poi": "^9.6.13",
     "poi-preset-bundle-report": "^2.0.2",
     "sass-loader": "^6.0.6",
     "vue-template-compiler": "^2.5.9",

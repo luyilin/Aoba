@@ -47,11 +47,11 @@ The name is inspired by lovely Aoba Suzukaze in *New Game!*, maybe it can be a g
 ```
 
 * Then write a .json or .yaml file at the same directory where `index.html` is located.
+
 The file has six parts, basicInfo, contact, application, workExperience, personalProject and skills.
 See [content.json](https://github.com/luyilin/Aoba/blob/master/docs/content.json) or [content.yaml](https://github.com/luyilin/Aoba/blob/master/docs/content.yaml) for details.
 
-
-* Then serve this directory as a static website:
+* Then serve this directory as a static website to deploy an online resume.
 
   - node.js: `npm i -g serve` && `serve ./docs`
   - python: `cd ./docs` && `python -m SimpleHTTPServer`
@@ -60,6 +60,7 @@ See [content.json](https://github.com/luyilin/Aoba/blob/master/docs/content.json
   
 * Finally save the file as pdf, open the file in a browser, choose print and save.
 
+  In case the resume's background color or the circles cannot be displayed when print to pdf, please tick the option: Print - More settings - Background.
 
 ## Deploy
 
