@@ -191,6 +191,7 @@
   body {
     font-family: PingFang SC,Lantinghei SC,-apple-system,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
     -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
   }
 
   ul, li {
@@ -224,6 +225,9 @@
     background-color: var(--theme);
     color: #fff;
     padding: 15px;
+    @media print {
+      background-color: var(--theme);
+    }
     .avatar-wrap {
       margin: 25px auto 40px;
       text-align: center;
@@ -330,6 +334,9 @@
           position: absolute;
           top: 0;
           left: -9px;
+          @media print {
+            background-color: var(--theme);
+          }
         }
         h4 {
           color: var(--dark);
