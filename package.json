@@ -30,13 +30,13 @@
     "vue-inter": "^1.1.1"
   },
   "devDependencies": {
-    "eslint-config-rem": "^3.0.0",
-    "node-sass": "^4.7.2",
-    "poi": "^9.6.13",
-    "poi-preset-bundle-report": "^2.0.2",
-    "sass-loader": "^6.0.6",
-    "vue-template-compiler": "^2.5.9",
-    "xo": "^0.18.0"
+    "eslint-config-rem": "3.2.0",
+    "node-sass": "4.7.2",
+    "poi": "9.6.13",
+    "poi-preset-bundle-report": "2.0.2",
+    "sass-loader": "6.0.6",
+    "vue-template-compiler": "2.5.9",
+    "xo": "0.18.2"
   },
   "xo": {
     "extends": "rem",

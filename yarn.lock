@@ -2301,9 +2301,9 @@ eslint-config-prettier@^1.7.0:
   dependencies:
     get-stdin "^5.0.1"
 
-eslint-config-rem@^3.0.0:
+eslint-config-rem@3.2.0:
   version "3.2.0"
-  resolved "http://registry.npm.taobao.org/eslint-config-rem/download/eslint-config-rem-3.2.0.tgz#8f9db2f7dded1875a12689a3e28ab4ae137cfac3"
+  resolved "https://registry.yarnpkg.com/eslint-config-rem/-/eslint-config-rem-3.2.0.tgz#8f9db2f7dded1875a12689a3e28ab4ae137cfac3"
   dependencies:
     eslint-config-prettier "^1.7.0"
     eslint-plugin-markdown "^1.0.0-beta.6"
@@ -4482,7 +4482,7 @@ node-pre-gyp@^0.6.39:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-node-sass@^4.7.2:
+node-sass@4.7.2:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.7.2.tgz#9366778ba1469eb01438a9e8592f4262bcb6794e"
   dependencies:
@@ -4930,7 +4930,7 @@ poi-load-config@^1.1.6:
     postcss-load-config "^1.2.0"
     use-config "^2.0.0"
 
-poi-preset-bundle-report@^2.0.2:
+poi-preset-bundle-report@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/poi-preset-bundle-report/-/poi-preset-bundle-report-2.0.2.tgz#a09e139ac0137ad5d7b2a1d15b77b01c06a92259"
   dependencies:
@@ -4940,7 +4940,7 @@ poi-webpack-node-externals@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/poi-webpack-node-externals/download/poi-webpack-node-externals-2.0.0.tgz#3e23ae0673705f5f44b23ecd194b85c724de91fa"
 
-poi@^9.6.13:
+poi@9.6.13:
   version "9.6.13"
   resolved "https://registry.yarnpkg.com/poi/-/poi-9.6.13.tgz#7ef137f6a863a93d1c1ffc7f17f3a9f588aa847d"
   dependencies:
@@ -5868,7 +5868,7 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-loader@^6.0.6:
+sass-loader@6.0.6:
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-6.0.6.tgz#e9d5e6c1f155faa32a4b26d7a9b7107c225e40f9"
   dependencies:
@@ -6880,7 +6880,7 @@ vue-style-loader@^3.0.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.3.3, vue-template-compiler@^2.5.9:
+vue-template-compiler@2.5.9, vue-template-compiler@^2.3.3:
   version "2.5.9"
   resolved "http://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.5.9.tgz#7fabc73c8d3d12d32340cd86c5fc33e00e86d686"
   dependencies:
@@ -7161,9 +7161,9 @@ xo-init@^0.5.0:
     the-argv "^1.0.0"
     write-pkg "^2.0.0"
 
-xo@^0.18.0:
+xo@0.18.2:
   version "0.18.2"
-  resolved "http://registry.npm.taobao.org/xo/download/xo-0.18.2.tgz#92a42eb02a4fb149dfea5518021914f5aac84ff0"
+  resolved "https://registry.yarnpkg.com/xo/-/xo-0.18.2.tgz#92a42eb02a4fb149dfea5518021914f5aac84ff0"
   dependencies:
     arrify "^1.0.0"
     debug "^2.2.0"
