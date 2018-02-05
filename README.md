@@ -18,7 +18,7 @@ The name is inspired by lovely Aoba Suzukaze in *New Game!*, maybe it can be a g
 
 ### Work with the single JavaScript file and the css file.
 
-* CDN: [UNPKG](https://unpkg.com/aoba-resume@1.0.2/) | [jsDelivr](https://cdn.jsdelivr.net/npm/aoba-resume@latest/dist/)
+* CDN: [UNPKG](https://unpkg.com/aoba-resume@latest/) | [jsDelivr](https://cdn.jsdelivr.net/npm/aoba-resume@latest/dist/)
 
 * Create an HTML file: `index.html` which will be be your resume:
 
