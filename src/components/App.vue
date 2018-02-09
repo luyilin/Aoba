@@ -165,8 +165,6 @@
 </script>
 
 <style lang="scss">
-  @import "../assets/iconfont.css";
-
   * {
     padding: 0;
     margin: 0;
