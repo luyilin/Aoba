@@ -17,7 +17,7 @@ class Aoba {
       color: ''
     }, content, i)
     inter = new Inter({
-      locale: i && i.lang || 'zh',
+      locale: (i && i.lang) || 'zh',
       locales: lang
     })
   }
