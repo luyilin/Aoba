@@ -23,7 +23,7 @@
   "author": "luyilin <luyilin12@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "color": "^2.0.1",
+    "color": "^3.0.0",
     "js-yaml": "^3.10.0",
     "unfetch": "^3.0.0",
     "vue": "^2.5.9",
