@@ -2295,20 +2295,11 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-prettier@^1.7.0:
-  version "1.7.0"
-  resolved "http://registry.npm.taobao.org/eslint-config-prettier/download/eslint-config-prettier-1.7.0.tgz#cda3ce22df1e852daa9370f1f3446e8b8a02ce44"
+eslint-config-rem@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-rem/-/eslint-config-rem-4.0.0.tgz#a33022c2122d925e5cf632dc45555cd2e090e50f"
   dependencies:
-    get-stdin "^5.0.1"
-
-eslint-config-rem@^3.0.0:
-  version "3.2.0"
-  resolved "http://registry.npm.taobao.org/eslint-config-rem/download/eslint-config-rem-3.2.0.tgz#8f9db2f7dded1875a12689a3e28ab4ae137cfac3"
-  dependencies:
-    eslint-config-prettier "^1.7.0"
     eslint-plugin-markdown "^1.0.0-beta.6"
-    eslint-plugin-prettier "^2.0.1"
-    prettier "^1.2.2"
 
 eslint-config-xo@^0.18.0:
   version "0.18.2"
@@ -2382,13 +2373,6 @@ eslint-plugin-no-use-extend-native@^0.3.2:
     is-js-type "^2.0.0"
     is-obj-prop "^1.0.0"
     is-proto-prop "^1.0.0"
-
-eslint-plugin-prettier@^2.0.1:
-  version "2.3.1"
-  resolved "http://registry.npm.taobao.org/eslint-plugin-prettier/download/eslint-plugin-prettier-2.3.1.tgz#e7a746c67e716f335274b88295a9ead9f544e44d"
-  dependencies:
-    fast-diff "^1.1.1"
-    jest-docblock "^21.0.0"
 
 eslint-plugin-promise@^3.4.0:
   version "3.6.0"
@@ -2670,10 +2654,6 @@ fast-deep-equal@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/fast-deep-equal/download/fast-deep-equal-1.0.0.tgz#96256a3bc975595eb36d82e9929d060d893439ff"
 
-fast-diff@^1.1.1:
-  version "1.1.2"
-  resolved "http://registry.npm.taobao.org/fast-diff/download/fast-diff-1.1.2.tgz#4b62c42b8e03de3f848460b639079920695d0154"
-
 fast-json-stable-stringify@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/fast-json-stable-stringify/download/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
@@ -2923,7 +2903,7 @@ get-stdin@^4.0.1:
   version "4.0.1"
   resolved "http://registry.npm.taobao.org/get-stdin/download/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
 
-get-stdin@^5.0.0, get-stdin@^5.0.1:
+get-stdin@^5.0.0:
   version "5.0.1"
   resolved "http://registry.npm.taobao.org/get-stdin/download/get-stdin-5.0.1.tgz#122e161591e21ff4c52530305693f20e6393a398"
 
@@ -3832,10 +3812,6 @@ isobject@^3.0.0, isobject@^3.0.1:
 isstream@~0.1.2:
   version "0.1.2"
   resolved "http://registry.npm.taobao.org/isstream/download/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
-
-jest-docblock@^21.0.0:
-  version "21.2.0"
-  resolved "http://registry.npm.taobao.org/jest-docblock/download/jest-docblock-21.2.0.tgz#51529c3b30d5fd159da60c27ceedc195faf8d414"
 
 js-base64@^2.1.8:
   version "2.4.0"
@@ -5300,7 +5276,7 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "http://registry.npm.taobao.org/preserve/download/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@^1.2.2, prettier@^1.7.0:
+prettier@^1.7.0:
   version "1.8.2"
   resolved "http://registry.npm.taobao.org/prettier/download/prettier-1.8.2.tgz#bff83e7fd573933c607875e5ba3abbdffb96aeb8"
 
