@@ -36,7 +36,7 @@
     "poi-preset-bundle-report": "^2.0.2",
     "sass-loader": "^6.0.6",
     "vue-template-compiler": "^2.5.9",
-    "xo": "^0.18.0"
+    "xo": "^0.21.0"
   },
   "xo": {
     "extends": "rem",
